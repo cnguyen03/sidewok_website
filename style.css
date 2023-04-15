@@ -1,11 +1,138 @@
-body {
+/* Set height of body and the document to 100% to enable "full page tabs" */
+body, html {
+  height: 100%;
+  margin: 0;
   font-family: Arial, Helvetica, 'Roboto', sans-serif;
 }
-.menu {
-    text-align: center;
-    background-color: white;
-    color: black;
-    padding: 8px;
+
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+  position: relative;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+  background-color: inherit;
+  text-align: center;
+  width: 32%;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  background-color: #ccc;
+}
+
+/* Style tab links */
+.tablink {
+  background-color: #555;
+  color: white;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  font-size: 17px;
+  width: 50%;
+}
+
+.tablink:hover {
+  background-color: #777;
+}
+
+/* Style the tab content (and add height:100% for full page content) */
+.tabcontent {
+  color: black;
+  display: none;
+  padding: 100px 20px;
+  height: 100%;
+}
+
+*,
+*:after,
+*:before {
+  box-sizing: border-box;
+  font-family: Helvetica, Arial, 'Roboto' sans-serif;
+}
+
+.container {
+  width: 90%;
+  margin: 1em auto;
+  border: 1px solid #ddd;
+  padding: 0.3em 0.6em;
+}
+.container:after, .container:before {
+  display: table;
+  content: " ";
+  line-height: 0;
+  font-size: 0;
+  clear: both;
+}
+.container p {
+  font-size: 0.9em;
+  color: #777;
+  margin-bottom: 1.5em;
+  font-style: italic;
+}
+
+h3 {
+  position: relative;
+  font-weight: 700;
+  margin: 1em 0 1em 0;
+}
+h3:after, h3:before {
+  display: table;
+  content: " ";
+  line-height: 0;
+  font-size: 0;
+  clear: both;
+}
+
+h3 span {
+  float: left;
+  width: 10%;
+  text-align: center;
+  display: block;
+}
+h3 span:first-child {
+  width: 40%;
+  text-align: left;
+}
+h3 .dots {
+  width: 50%;
+  border-bottom: 2px dotted #ccc;
+  margin-top: .5em;
+}
+
+.breaker {
+  text-align: center;
+  background-color: white;
+  color: black;
+  font-weight: bold;
+  padding: 1px;
+}
+.row {
+  text-align: center;
+  background-color: white;
+  color: black;
+  display: flex;
+}
+/* Create two equal columns that sits next to each other */
+.column {
+  flex: 50%;
+  padding: 5px;
 }
 .header {
   text-align: center;
@@ -20,6 +147,7 @@ body {
   padding: 12px;
 }
 .button {
+    margin: auto;
     background-color: #555555; /* Green */
     border: none;
     color: white;
