@@ -22,17 +22,19 @@
     <p style="font-family:Courier New">
     <b>Free Delivery to The Wexler, Academy 65 and Hornet Commons</b>
     </p>
-    <h4 > Open 5pm-2am Mon - Fri | 24hrs Weekends </h4>
+    <h4 > Open 5pm-2am Tues - Sun </h4>
   </div>
 
   <div class="header"> 
     <button class=button style="margin:auto;" onclick="openPage('Menu')"> View Menu </button>
   </div>
   <div class="header"> 
-    <button class=button style="margin:auto;" onclick="onClick()"> Place Order </button>
+    <!-- <button class=button style="margin:auto;" onclick="onClick()"> Place Order </button> -->
     <h4 > DoorDash Coming Soon! </h4>
   </div>
-  
+  <div class="container" style="width:30%; text-align: center">
+    <h3> Contact us at (707) 849-6488 </h3>
+  </div>
 </div>
 
 <div id="Menu" class="pagecontent">
@@ -41,92 +43,97 @@
     <p style="font-family:Courier New">
     <b>Free Delivery to The Wexler, Academy 65 and Hornet Commons</b>
     </p>
-    <h4> Open 5pm-2am Mon - Fri | 24hrs Weekends </h4>
+    <h4> Open 5pm-2am Tues - Sun </h4>
   </div>
   <div class="header">
     <h1>The Menu</h1> 
   </div>
+  <h4 style="text-align: center;"> Contact us at (707) 849-6488 
+  </br>
+  Or place your order here:
+  </h4>
   <div class="header"> 
     <button class=button style="margin:auto;" onclick="onClick()"> Place Order </button>
   </div>
   <div class="tab">
     <button class="tablinks" onclick="openTab(event, 'Entrees')" id="defaultTab">Wok Entrees</button>
     <button class="tablinks" onclick="openTab(event, 'Sides')">Wok Sides</button>
-    <button class="tablinks" onclick="openTab(event, 'Drinks')">Wok Drinks</button>
+    <!-- <button class="tablinks" onclick="openTab(event, 'Drinks')">Wok Drinks</button> -->
   </div>
 
   <div>
     <div class="container">
       <h2 style="text-align: center;"> Try Our Combo Meals! </h2>
+      <p style="text-align: center;"> +$1 for Garlic/Egg Fried Rice, +$2 for Chicken/Pork Fried Rice 
+      </br>
+        +$2 for Salmon Entrees
+      </p>
       <h3>
         <span>Small Combo</span>
         <span class="dots"></span>
-        <span>$?</span>
+        <span>$8.99</span>
       </h3>
-      <p> Your choice of one Side and one Entree </p>
+      <p> One Entree with White Rice </p>
       <h3>
         <span>Medium Combo</span>
         <span class="dots"></span>
-        <span>$?</span>
+        <span>$11.99</span>
       </h3>
-      <p> Your choice of one Side and two Entrees, plus a Drink</p>
+      <p> Your choice of one small Side and one Entree with White Rice </p>
       <h3>
         <span>Large Combo</span>
         <span class="dots"></span>
-        <span>$?</span>
+        <span>$13.99</span>
       </h3>
-      <p> Your choice of two Sides and two Entrees, plus a Drink</p>
+      <p> Your choice of two small Sides and one Entree with White Rice </p>
+      <h3>
+        <span>Deluxe Combo</span>
+        <span class="dots"></span>
+        <span>$17.99</span>
+      </h3>
+      <p> Your choice of two small Sides and two Entrees with two White Rice </p>
     </div>
   </div>
 
   <div id="Entrees" class="tabcontent">
     <div class="container">
-      <h2 style="text-align: center;"> Entrees </h2>
-      <h3>
-        <span>Cold Japchae</span>
-        <span class="dots"></span>
-        <span>$5</span>
-      </h3>
-      <h3>
-        <span>Spicy Beef Noodles</span>
-        <span class="dots"></span>
-        <span>$6</span>
-      </h3>
+      <h2 style="text-align: center;"> Entrees À La Carte</h2>
       <h3>
         <span>Chicken Adobo w/ Marinated Eggs</span>
         <span class="dots"></span>
         <span>$8</span>
       </h3>
+      <p> Traditional Filipino stewed chicken with soy and vinegar sauce </p>
       <h3>
         <span>Basil Chicken</span>
         <span class="dots"></span>
         <span>$8</span>
       </h3>
+      <p> Chicken fried with aromatics and peppers. Finished with Thai holy basil </p>
       <h3>
         <span>Basil Beef w/ Fried Eggs</span>
         <span class="dots"></span>
         <span>$9</span>
       </h3>
-      <h3>
-        <span>Chasu Pork Belly</span>
-        <span class="dots"></span>
-        <span>$8</span>
-      </h3>
+      <p> Beef fried with aromatics and peppers. Finished with Thai holy basil. Topped with a fried egg </p>
       <h3>
         <span>Hamburger Steak</span>
         <span class="dots"></span>
         <span>$8</span>
       </h3>
+      <p> Beef patty with onions, carrots, and peppers. Glazed with house sauce </p>
       <h3>
         <span>Honey Miso Salmon</span>
         <span class="dots"></span>
         <span>$10</span>
       </h3>
+      <p> Pan-fried salmon with a honey miso glaze </p>
       <h3>
         <span>Teriyaki Salmon</span>
         <span class="dots"></span>
         <span>$10</span>
       </h3>
+      <p> Pan-fried salmon marinated with teriyaki sauce </p>
     </div>
   </div>
 
@@ -134,24 +141,29 @@
     <div class="container">
       <h2 style="text-align: center;"> Sides </h2>
       <h3>
-        <span>Egg Roll</span>
-        <span class="dots"></span>
-        <span>$1</span>
-      </h3>
-      <h3>
-        <span>Pot Sticker</span>
-        <span class="dots"></span>
-        <span>$1</span>
-      </h3>
-      <h3>
         <span>Marinated Egg</span>
         <span class="dots"></span>
-        <span>$1</span>
+        <span>$2</span>
       </h3>
       <h3>
         <span>White Rice</span>
         <span class="dots"></span>
         <span>$2</span>
+      </h3>
+      <h3>
+        <span>Stir-fried Garlic Green Beans</span>
+        <span class="dots"></span>
+        <span>$3</span>
+      </h3>
+      <h3>
+        <span>Egg Roll x 4</span>
+        <span class="dots"></span>
+        <span>$4</span>
+      </h3>
+      <h3>
+        <span>Garlic Fried Rice</span>
+        <span class="dots"></span>
+        <span>$4</span>
       </h3>
       <h3>
         <span>Kimchi</span>
@@ -179,19 +191,34 @@
         <span>$4</span>
       </h3>
       <h3>
-        <span>Stir-fried Garlic String Beans</span>
-        <span class="dots"></span>
-        <span>$4</span>
-      </h3>
-      <h3>
         <span>Stir-fried Garlic Broccoli</span>
         <span class="dots"></span>
-        <span>$4</span>
+        <span>$5</span>
+      </h3>
+      <h3>
+        <span>Pot Sticker x 6</span>
+        <span class="dots"></span>
+        <span>$5</span>
+      </h3>
+      <h3>
+        <span>Egg Fried Rice</span>
+        <span class="dots"></span>
+        <span>$5</span>
+      </h3>
+      <h3>
+        <span>Chicken Fried Rice</span>
+        <span class="dots"></span>
+        <span>$6</span>
+      </h3>
+      <h3>
+        <span>Pork Fried Rice</span>
+        <span class="dots"></span>
+        <span>$7</span>
       </h3>
     </div>
   </div>
 
-  <div id="Drinks" class="tabcontent">
+  <!-- <div id="Drinks" class="tabcontent">
     <div class="container">
       <h2 style="text-align: center;"> Drinks </h2>
       <h3>
@@ -225,7 +252,7 @@
         <span>$?</span>
       </h3>
     </div>
-  </div>
+  </div> -->
 
   <div class="header"> 
     <button class=button style="margin:auto;" onclick="onClick()"> Place Order </button>
